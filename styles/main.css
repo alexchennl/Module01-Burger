@@ -147,8 +147,9 @@ background-size: cover;
 .banner-box {
     background-image: url(../images/banner.jpg);
     background-size: cover;
-    background-position: center center;
-    padding: 100px 727px 100px 100px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding: 100px 100px 120px;
     margin-bottom: 80px;
 }
 .banner-title {
@@ -177,6 +178,7 @@ background-size: cover;
     font-size: 15px;
     line-height: 1.6;
     color: #FAF9F9;
+    max-width: 353px;
     margin-top: 10px;
     padding-top: 4px;
 }
@@ -505,4 +507,37 @@ background-size: cover;
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+/* responsive */
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .footer-box {
+        gap: 61px;
+    }
 }
