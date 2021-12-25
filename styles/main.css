@@ -225,7 +225,9 @@ background-size: cover;
     padding: 13px 30px;
     font-size: 15px;
     color: #443737;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../images/arrow.svg);
     background-size: 12.79px 7.75px;
@@ -249,7 +251,8 @@ background-size: cover;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
@@ -614,6 +617,41 @@ background-size: cover;
     .menu-other .menu-grid-cover,
     .menu-other .menu-grid-cover img {
         height: 320px;
+    }
+    .wrapper {
+        max-width: 46.125em;
+    }
+    .content {
+        padding-top: 0;
+        padding-left: 30px;
+    }
+    .content-title {
+        font-size: 86px;
+        line-height: 100px;
+    }
+    .content-title span {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .visual-bg {
+        width: 198px;
+    }
+    .main img {
+        width: 585px;
+        right: -231px;
+    }
+    .promo {
+        padding-top: 106px;
+        padding-bottom: 46px;
+    }
+    .promo-left {
+        padding: 15px 29px;
+    }
+    .promo-right {
+        padding: 20px 30px;
+    }
+    .promo-wrapper {
+        height: 298px;
     }
 }
 @media (max-width: 765px) {
