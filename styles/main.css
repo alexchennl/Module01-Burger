@@ -307,6 +307,7 @@ background-size: cover;
 .footer-box {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .footer-logo {
     width: 63px;
@@ -602,7 +603,7 @@ background-size: cover;
     }
     .menu-other {
         overflow: hidden;
-        height: 670px;
+        height: 630px;
     }
     .menu-other .menu-grid {
         display: flex;
@@ -653,6 +654,9 @@ background-size: cover;
     .promo-wrapper {
         height: 298px;
     }
+    .button-up.visible {
+        display: none;
+    }
 }
 @media (max-width: 765px) {
     nav {
@@ -661,8 +665,19 @@ background-size: cover;
     .header {
         gap: 21px;
     }
+    .menu-other .container {
+        padding-right: 0;
+    }
 }
 @media (max-width: 567px) {
+    .header {
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+    .header-logo {
+        width: 116px;
+        height: 37px;
+    }
     .breadcrumbs {
         margin-bottom: 26px;
     }
@@ -682,7 +697,11 @@ background-size: cover;
     }
     .banner-box {
         background-position: 17% center;
-        padding: 35px 24px 14px;
+        padding: 35px 24px 35px;
+        margin-bottom: 57px;
+    }
+    .menu {
+        padding-top: 0px;
     }
     .menu-title {
         font-size: 27px;
@@ -690,31 +709,55 @@ background-size: cover;
     .menu-select {
         flex-basis: 136px;
         font-size: 12px;
+        padding: 13px 24px 13px 14px;
+        background-size: 13.79px 8.75px;
+        background-position: 91.8% center;
     }
     .menu-grid {
-        gap: 24px 12px;
+        gap: 22px 12px;
+        margin-bottom: 65px;
     }
     .menu-grid-cover {
-        height: 180px;
+        height: 54vw;
     }
     .menu-grid-cover img {
-        height: 180px;
+        height: 100%;
     }
     .menu-grid-title {
         font-size: 13px;
+        margin-bottom: -10px;
+        margin-top: 10px;
     }
     .menu-grid-price {
         font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .menu-grid-btn {
+        font-size: 14px;
+        padding: 12px 24px;
+        gap: 4px;
     }
     .menu-header {
-        margin-bottom: 30px;
+        margin-bottom: 31px;
     }
-    .menu-other .menu-grid-cover,
+    .menu-other {
+        height: 108vw;
+    }
+    .menu-other .menu-grid {
+        padding-bottom: 44vw;
+    }
+    .menu-other .menu-grid-cover {
+        height: 56vw;
+    }
     .menu-other .menu-grid-cover img {
-        height: 180px;
+        height: 100%;
     }
     .menu-other .menu-grid-item {
-        flex: 0 0 139px;
+        flex: 0 0 38vw;
+    }
+    .footer {
+        margin-top: 57px;
+        padding-top: 60px;
     }
     .footer-box {
         position: relative;
@@ -735,14 +778,14 @@ background-size: cover;
         right: 0;
     }
 }
-@media (max-width: 360px) {
-    .header-logo {
-        width: 116px;
-        height: 37px;
-    }
-}
 @media (max-width: 320px) {
     .banner-box {
         background-position: 25% center;
+    }
+    .menu-grid-cover {
+        height: 180px;
+    }
+    .menu-grid-cover img {
+        height: 180px;
     }
 }
