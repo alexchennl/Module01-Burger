@@ -25,12 +25,12 @@ header {
     flex-basis: 68.5%;
 }
 .header-logo {
-display: block;
-background-image: url(../images/logo.svg);
-width: 176px;
-height: 56px;
-background-repeat: no-repeat;
-background-size: cover;
+    display: block;
+    background-image: url(../images/logo.svg);
+    width: 176px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .header-nav {
     list-style-type: none;
@@ -317,7 +317,7 @@ background-size: cover;
     flex: 0 0 auto;
 }
 .footer-item h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     text-transform: uppercase;
     margin-top: 1px;
